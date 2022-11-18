@@ -1,0 +1,18 @@
+version: '2.1'
+orbs:
+  node: circleci/node@5.0.3
+jobs:
+  test:
+    executor: node/default
+    steps:
+      - checkout
+      - run: sudo npm install discord.js
+      - node/install-packages:
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
+      - run: npm run start
+      - run: npm run deploy
+workflows:
+  Log:
+    jobs:
+      - test
