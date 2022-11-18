@@ -10,8 +10,10 @@ jobs:
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
-      - run: npm run start
       - run: npm run deploy
+      - run: npm run start
+
+     
 workflows:
   Log:
     jobs:
