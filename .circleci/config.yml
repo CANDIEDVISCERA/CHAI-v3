@@ -2,6 +2,7 @@ version: '2.1'
 orbs:
   node: circleci/node@5.0.3
 jobs:
+  no_output_timeout: 24h
   run:
     executor: node/default
     steps:
