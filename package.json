@@ -5,7 +5,6 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "node .",
-		"lint": "eslint ."
 		"deploy": "node deploy_command.js"
 	},
 	"keywords": [],
