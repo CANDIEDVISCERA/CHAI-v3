@@ -6,7 +6,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - run: sudo npm install discord.js
+      - run: npm install discord.js
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
