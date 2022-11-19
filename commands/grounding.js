@@ -1,8 +1,11 @@
-const { SlashCommandBuilder } = require('discord.js');
+const wait = require('node:timers/promises').setTimeout;
 
-const data = new SlashCommandBuilder()
-	.setName('echo')
-	.setDescription('Replies with your input!')
-	.addStringOption(option =>
-		option.setName('input')
-			.setDescription('The input to echo back'));
+client.on(Events.InteractionCreate, async interaction => {
+	if (!interaction.isChatInputCommand()) return;
+
+	if (interaction.commandName === 'ping') {
+		await interaction.deferReply();
+		await wait(4000);
+		await interaction.editReply('Pong!');
+	}
+});
