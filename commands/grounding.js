@@ -1,5 +1,7 @@
 const { ActionRowBuilder, Events, SelectMenuBuilder } = require('discord.js');
 
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
 client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
