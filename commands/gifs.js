@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
 
-const {Client} = requires('discord.js')
+const {Client} = require('discord.js')
 
 
 const data = new SlashCommandBuilder()
