@@ -14,7 +14,7 @@ module.exports = {
 				{ name: 'Movie', value: 'gif_movie' },
 ))
 
-},
+
 		
 	
 };
