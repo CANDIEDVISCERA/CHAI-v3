@@ -15,5 +15,7 @@ module.exports = {
 			.addChannelTypes(ChannelType.GuildText))
 	.addBooleanOption(option =>
 		option.setName('embed')
-			.setDescription('Whether or not the echo should be embedded'));
-}
+			.setDescription('Whether or not the echo should be embedded'
+			};
+				       ));
+
