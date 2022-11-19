@@ -9,9 +9,9 @@ module.exports = {
 			.setDescription('The gif category')
 			.setRequired(true)
 			.addChoices(
-				{ name: 'one', value: 'gif_dog' },
-				{ name: 'two', value: 'gif_dog' },
-				{ name: 'three', value: 'gif_dog' },
+				{ name: 'one', value: 'gif_dog.gif' },
+				{ name: 'two', value: 'gif_dog.gif' },
+				{ name: 'three', value: 'gif_dog.gif' },
 ))
 
 
