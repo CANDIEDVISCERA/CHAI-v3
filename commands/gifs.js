@@ -12,7 +12,7 @@ module.exports = {
 	.addSubcommand(subcommand =>
 		subcommand
 			.setName('server')
-			.setDescription('Info about the server'));
+			.setDescription('Info about the server'))
 
 			};
 			
