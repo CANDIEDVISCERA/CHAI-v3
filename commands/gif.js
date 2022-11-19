@@ -16,5 +16,5 @@ module.exports = {
 				{ name: 'Funny', value: 'gif_funny' },
 				{ name: 'Meme', value: 'gif_meme' },
 				{ name: 'Movie', value: 'gif_movie' },
-    }
+    
 			));
