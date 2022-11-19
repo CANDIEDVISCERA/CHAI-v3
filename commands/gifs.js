@@ -1,9 +1,17 @@
-const { Client, Collection, Events, GatewayIntentBits, SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js');
 
-client.on(Events.InteractionCreate, async interaction => {
-	if (!interaction.isChatInputCommand()) return;
+const {Client} = requires('discord.js')
 
-	if (interaction.commandName === 'ping') {
-		await interaction.reply({ content: 'Secret Pong!', ephemeral: true });
-	}
-});
+
+const data = new SlashCommandBuilder()
+	.setName('gif')
+	.setDescription('Sends a random gif!')
+	.addStringOption(option =>
+		option.setName('category')
+			.setDescription('The gif category')
+			.setRequired(true)
+			.addChoices(
+				{ name: 'Funny', value: 'gif_funny' },
+				{ name: 'Meme', value: 'gif_meme' },
+				{ name: 'Movie', value: 'gif_movie' },
+			));
