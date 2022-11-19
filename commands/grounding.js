@@ -1,14 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 const data = new SlashCommandBuilder()
-	.setName('gif')
-	.setDescription('Sends a random gif!')
+	.setName('echo')
+	.setDescription('Replies with your input!')
 	.addStringOption(option =>
-		option.setName('category')
-			.setDescription('The gif category')
-			.setRequired(true)
-			.addChoices(
-				{ name: 'Funny', value: 'gif_funny' },
-				{ name: 'Meme', value: 'gif_meme' },
-				{ name: 'Movie', value: 'gif_movie' },
-			));
+		option.setName('input')
+			.setDescription('The input to echo back')
+			.setRequired(true));
