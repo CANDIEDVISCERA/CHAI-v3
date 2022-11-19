@@ -16,6 +16,7 @@ module.exports = {
 	.addBooleanOption(option =>
 		option.setName('embed')
 			.setDescription('Whether or not the echo should be embedded'
-			};
+	},
+			
 				       ));
 
