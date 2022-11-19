@@ -1,6 +1,6 @@
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle, Events } = require('discord.js');
 
-interaction.client.on(Events.InteractionCreate, async interaction => {
+client.on(Events.Interaction.client, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
 	if (interaction.commandName === 'button') {
