@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
-const data = new SlashCommandBuilder()
+	data: new SlashCommandBuilder()
 	.setName('gif')
 	.setDescription('Sends a random gif!')
 	.addStringOption(option =>
